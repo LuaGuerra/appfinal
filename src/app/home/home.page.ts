@@ -60,18 +60,38 @@ export class HomePage implements OnInit {
       popupAnchor: [0, 0] 
     });
   
-      Leaflet.marker({lat:-23.97743, lng:-46.309197}, { icon:PM }).addTo(this.mapa).bindPopup('shopping 1');
+      Leaflet.marker({lat:-23.97743, lng:-46.309197}, { icon:PM }).addTo(this.mapa).bindPopup('lat:-23.97743, lng:-46.309197');
 
 
     const PB = Leaflet.icon({
       iconUrl: '../../assets/6.png', //Caminho do Marcador
-      iconSize: [96, 58], 
+      iconSize: [100, 60], 
       iconAnchor: [0, 0], 
       popupAnchor: [0, 0] 
     });
 
-      Leaflet.marker({lat:-23.968945, lng:-46.332291}, { icon:PB }).addTo(this.mapa).bindPopup('shopping 2');
+      Leaflet.marker({lat:-23.968945, lng:-46.332291}, { icon:PB }).addTo(this.mapa).bindPopup('lat:-23.968945, lng:-46.332291');
 
+
+    const E = Leaflet.icon({
+      iconUrl: '../../assets/embare1.png', //Caminho do Marcador
+      iconSize: [100, 60], 
+      iconAnchor: [0, 0], 
+      popupAnchor: [0, 0] 
+    });
+
+      Leaflet.marker({lat:-23.97394, lng:-46.318692}, { icon:E }).addTo(this.mapa).bindPopup('lat:-23.97394, lng:-46.318692');
+
+
+      
+    const MR = Leaflet.icon({
+      iconUrl: '../../assets/miramar.png', //Caminho do Marcador
+      iconSize: [100, 30], 
+      iconAnchor: [0, 0], 
+      popupAnchor: [0, 0] 
+    });
+
+      Leaflet.marker({lat:-23.966509, lng:-46.334528}, { icon:MR }).addTo(this.mapa).bindPopup('lat:-23.966509, lng:-46.334528');
 
 
   }
